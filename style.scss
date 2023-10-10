@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #333;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    @extend body;
+    input[type=number] {
+        text-align: right;
+    }
+    button {
+        padding: 5px 10px;
+    }
+}
